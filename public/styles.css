@@ -3,30 +3,60 @@
   }
 
   html, body {
-    max-width: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
+    background-image: url("images/body-background.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+
+.body-overlay{
+    background-color: rgba(0, 0, 0, 0.612);
+    overflow-x: hidden;
+    height: 100vh;
 }
+
+
 
 /* //////////////////////// HEADER  ////////////////////////*/
 
 header{
-    background-color: rgb(102, 102, 252);
-    background-image: url("background3.jpg");
+    background-color: rgba(0, 0, 0, 0.406);
+    background-image: url("images/background.jpg");
     background-size: cover;
     color: white;
-    height: 600px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header-container{
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+    padding-top: 50vh; 
 }
 
 .heading{
-    padding-top: 50%;
-    transform: translateY(-50%);
+    width: fit-content;
+    max-width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.199);
+    height: fit-content;
+    
 }
 
 .heading h1{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-header .container .heading .btn{
+header .header-container .heading .btn{
     background-color: rgb(102, 102, 252);
     color: white;
 }
@@ -76,39 +106,42 @@ header .container .heading .btn{
     color: white;
     border-bottom: 2px solid white;
 }
-
+.navbar-collapse{
+    background-color: rgba(0, 0, 0, 0.306);
+}
 .sticky{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.424);
     width: 100%;
     position: fixed !important;
     top: 0;
-    box-shadow: 10px 3px 20px rgb(155, 152, 152);
+    /* box-shadow: 10px 3px 20px rgb(155, 152, 152); */
 }
 
+
 .sticky .container-fluid .navbar-brand,  .sticky .container-fluid .navbar-brand:active{
-    color: var(--primary);
+    color: white;
     padding-left: 40px;
 }
 
 .sticky .container-fluid .navbar-mobile-menu{
-    color: var();
+    color: white;
     font-size: 2rem;
 }
 
 .sticky .container-fluid .collapse .navbar-nav .header-link-container a{
     font-size: medium;
     font-weight: 500;
-    color: var(--primary);
+    color: white;
 } 
 
 .sticky .container-fluid .collapse .navbar-nav .header-link-container a:hover, .navbar-nav .header-link-container a:active{
-    color: var(--primary);
-    border-bottom: 2px solid var(--primary);
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 .sticky .container-fluid .navbar-toggler .navbar-mobile-menu{
-    color: var(--primary);
-    border-color: var(--primary);
+    color: white;
+    border-color: white;
     font-size: 2rem;
 }
 
@@ -160,30 +193,30 @@ main{
 
 main p{
     font-family: 'Public Sans', sans-serif;
-    color: rgb(146, 146, 146);
+    color: white;
 }
 
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+/* .carousel-control-next,
+.carousel-control-prev , .carousel-indicators {
     filter: invert(100%);
-}
-
+} */
 
 .slider-item{
-    padding: 2.5rem;
+    padding: 1.5rem;
     text-align: center;
+    border: 2px solid white;
 }
 
 .slider-item h6, .slider-item i{
-    color: rgb(102, 102, 252);
+    color: white;
 }
 
 .purple-icon{
-    color: rgb(102, 102, 252);
+    color: white;
 }
 
 .blue-icon{
-    color: rgb(0, 114, 238);
+    color: white;
 }
 
 .blue-icon:hover{
@@ -213,6 +246,16 @@ main p{
     padding-top: 20px;
     padding-bottom: 20px;
     color: rgb(146, 146, 146);
+}
+
+.white-heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.white-border{
+    border: 2px solid white;
 }
 
 /* .portfolio-images{
@@ -257,6 +300,19 @@ main .portfolio .primary-btn{
     background-color: hsl(270, 36%, 96%);
     width: 100%;
     padding: 3rem;
+}
+
+.transparent-black-background{
+    background-color: rgba(0, 0, 0, 0.406);
+    width: 100%;
+    padding: 3rem;
+}
+
+.center-horizontal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testimonial-img{
@@ -346,11 +402,14 @@ main .portfolio .primary-btn{
     padding-bottom: 10px;
     color: rgb(146, 146, 146);
 }
+.h6-heading{
+    color: white;
+}
 
 
 
 footer{
-    background-color: rgb(102, 102, 252);
+    background-color: rgba(0, 0, 0, 0.406);
     color: white;
     padding: 9rem;
 }
@@ -375,9 +434,27 @@ footer a:hover{
         font-size: 2rem;
     }
 
+    .header-container{
+        width: 100%;
+        height: 100%;
+        max-width: 100vw;
+        padding-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 60vh;
+        align-items: self-start; 
+    }
+    
     .heading{
-        padding-top: 450px;
-        transform: translateY(-50%);
+        width: 100%;
+        max-width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgba(0, 0, 0, 0.157);
+        height: fit-content;
+        
     }
 
     .navbar-nav{
@@ -422,7 +499,7 @@ footer a:hover{
 
     
     footer{
-        background-color: rgb(102, 102, 252);
+        background-color: rgba(0, 0, 0, 0.406);
         color: white;
         padding: 2rem;
     }

@@ -2,17 +2,17 @@ window.addEventListener("scroll", function(){
   var nav = document.querySelector("nav");
   nav.classList.toggle("sticky", window.scrollY > 50);
 
-  var textContent = document.getElementById('textContent');
-    var imageContent = document.getElementById('imageContent');
+  // var textContent = document.getElementById('textContent');
+  //   var imageContent = document.getElementById('imageContent');
     
     // Check the scroll position
-    if (window.scrollY > 50) { // Adjust this value to when you want the change to happen
-        textContent.style.display = 'none';
-        imageContent.style.display = 'block';
-    } else {
-        textContent.style.display = 'block';
-        imageContent.style.display = 'none';
-    }
+    // if (window.scrollY > 50) { // Adjust this value to when you want the change to happen
+    //     textContent.style.display = 'none';
+    //     imageContent.style.display = 'block';
+    // } else {
+    //     textContent.style.display = 'block';
+    //     imageContent.style.display = 'none';
+    // }
 })
 
 // console.log(window.innerWidth);
