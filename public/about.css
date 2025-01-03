@@ -1,0 +1,347 @@
+/*  //////////////////////////////////////////// HEADER BEGINS ////////////////////////////////////// */
+:root {
+    --primary: rgb(102, 102, 252);
+  }
+
+header{
+    /* background-color: hsl(24, 100%, 88%); */
+    background-color: hsl(270, 36%, 96%);
+    width: 100%;
+    padding-bottom: 3rem;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.logo-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.navbar{
+    background: transparent;
+    transition:all 0.6s;
+    z-index: 1000;
+}
+
+.navbar-nav .header-link-container a{
+    font-size: medium;
+    font-weight: 500;
+    color: black;
+} 
+
+.navbar-nav .header-link-container a:hover, .navbar-nav .header-link-container a:active{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.sticky{
+    background-color: white;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    box-shadow: 10px 3px 20px rgb(155, 152, 152);
+}
+
+.wrap{
+    white-space: no-wrap;
+}
+
+.navbar-brand{
+    padding-left: 1.5rem;
+    color: var(--primary);
+}
+
+.navbar-nav{
+    padding-right: 10rem;
+}
+
+
+.navbar-nav li{
+    padding: 1rem 2rem;
+}
+
+.navbar-nav li a{
+    font-size: medium;
+    /* font-weight: 600; */
+    color: var(--primary);;
+}
+
+.navbar a:hover{
+    color: var(--primary) !important;
+    border-bottom: 3px solid var(--primary);
+}
+
+.navbar-nav .header-link-container{
+    padding: 1rem 2rem;
+}
+
+.navbar-nav .header-link-container a{
+    font-size: medium;
+    font-weight: 500;
+    color: black;
+} 
+
+.navbar-nav .header-link-container a:hover, .navbar-nav .header-link-container a:active{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.navbar-img{
+   border-radius: 10%;
+}
+
+.navbar-about{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.navbar-row{
+    position: relative;
+}
+
+.navbar-about h2{
+    font-size: 3rem;
+}
+
+.navbar-about .btn{
+    background-color: var(--primary);
+    color: white;
+}
+
+.navbar-about .links{
+    position: absolute;
+    bottom: 0;
+}
+
+.navbar-about .links a{
+    padding-right: 0.5rem;
+    color: var(--primary);
+}
+
+.links  a{
+    color: var(--primary) !important;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--primary) !important;
+    text-decoration: underline;
+}
+
+/* ///////////////////////////////////////// HEADER ENDING ////////////////////////////////////////////////////////////////// */
+
+
+
+
+/* ///////////////////////////////////////// MAIN BEGINS ///////////////////////////////////////////////////////////*/
+
+main{
+    font-family: 'Figtree', sans-serif;
+}
+
+
+.background-container{
+    padding-top: 100px;
+}
+
+.background h6, .skills h6{
+    font-family: 'Public Sans', sans-serif;
+    color: var(--primary);
+    padding-left: 10px;
+}
+
+.background p{
+    font-size: 1.1rem;
+    width: 90%;
+}
+
+.skills li{
+    list-style: none;
+}
+
+.other-images{
+    width: cover;
+    margin-right: 0px;
+    padding-right: 0px;
+
+}
+
+.other-image{
+    border-radius: 10%;
+}
+
+.other-image:first-child{
+    border-radius: 0% 10% 10% 0;
+}
+.other-image:last-child{
+    border-radius: 10% 0 0 10%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.h6-heading{
+    font-family: 'Public Sans', sans-serif;
+    color: var(--primary);
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.off-white-background{
+    background-color: hsl(270, 36%, 96%);
+    width: 100%;
+    padding: 3rem;
+}
+
+.testimonial-img{
+    width: 25%;
+    border-radius: 10%;
+}
+
+.contact form{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact form div input{
+    padding: 1.5rem;
+    background-color: hsl(270, 36%, 96%);;
+}
+
+.contact form div textarea{
+    background-color: hsl(270, 36%, 96%);
+}
+
+.btn{
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.btn:hover{
+    background-color: rgb(78, 78, 192) !important;
+    color: white !important;
+}
+
+
+.popup-container{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.089);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.send-email-popup{
+    background-color: hsl(270, 36%, 96%);
+    box-shadow: 10px 3px 15px rgb(194, 191, 191);
+
+    height: 300px;
+    text-align: center;
+    padding: 100px 1rem;
+
+    position: fixed;
+    top: 50%;
+    opacity: 1;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.popup-container .send-email-popup .btn{
+    background-color: var(--primary) !important;
+    color: white;
+    position: relative;
+    bottom: -50%;
+    right: -40%;
+}
+
+.popup-container .send-email-popup .btn:hover{
+    color: rgb(78, 78, 192);
+    border: 2px solid rgb(102, 102, 252);
+    background-color: white;
+}
+
+
+
+/* ////////////////////////////////////////MAIN ENDS////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////FOOTER BEGINS/////////////////////////////////// */
+
+footer{
+    background-color: var(--primary);
+    color: white;
+    padding: 9rem;
+}
+
+footer a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer p{
+    color: whitesmoke;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+    .other-images{
+        width: cover;
+        margin-right: 0px;
+        padding-right: 0px;
+    
+    }
+    
+    .other-image{
+        border-radius: 0%;
+        margin-right: 0;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    
+    .other-image:first-child{
+        border-radius: 0;
+    }
+    .other-image:last-child{
+        border-radius: 0;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .testimonial-img{
+        width: 50%;
+        border-radius: 10%;
+    }
+
+    .contact form{
+        width: 100%;
+        margin-left: 0;
+        transform: translateX(0%);
+    }
+
+    footer{
+        background-color: rgb(102, 102, 252);
+        color: white;
+        padding: 2rem;
+    }
+    
+}

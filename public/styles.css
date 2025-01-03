@@ -1,0 +1,451 @@
+:root {
+    --primary: rgb(102, 102, 252);
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* //////////////////////// HEADER  ////////////////////////*/
+
+header{
+    background-color: rgb(102, 102, 252);
+    background-image: url("background3.jpg");
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+.heading{
+    padding-top: 50%;
+    transform: translateY(-50%);
+}
+
+.heading h1{
+    font-size: 3rem;
+}
+
+header .container .heading .btn{
+    background-color: rgb(102, 102, 252);
+    color: white;
+}
+
+.logo-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.navbar{
+    z-index: 1000;
+    transition:all 0.6s;
+    background: transparent;
+}
+
+.navbar-nav{
+    padding-right: 10rem;
+}
+
+.navbar-brand, .navbar-brand:active{
+    color: white;
+    padding-left: 40px;
+}
+
+.navbar-brand:hover{
+    color: white;
+    padding-left: 40px;
+}
+
+.navbar-mobile-menu{
+    color: white;
+    font-size: 2rem;
+}
+
+.navbar-nav .header-link-container{
+    padding: 1rem 2rem;
+}
+
+.navbar-nav .header-link-container a{
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+} 
+
+.navbar-nav .header-link-container a:hover, .navbar-nav .header-link-container a:active{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.sticky{
+    background-color: white;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    box-shadow: 10px 3px 20px rgb(155, 152, 152);
+}
+
+.sticky .container-fluid .navbar-brand,  .sticky .container-fluid .navbar-brand:active{
+    color: var(--primary);
+    padding-left: 40px;
+}
+
+.sticky .container-fluid .navbar-mobile-menu{
+    color: var();
+    font-size: 2rem;
+}
+
+.sticky .container-fluid .collapse .navbar-nav .header-link-container a{
+    font-size: medium;
+    font-weight: 500;
+    color: var(--primary);
+} 
+
+.sticky .container-fluid .collapse .navbar-nav .header-link-container a:hover, .navbar-nav .header-link-container a:active{
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.sticky .container-fluid .navbar-toggler .navbar-mobile-menu{
+    color: var(--primary);
+    border-color: var(--primary);
+    font-size: 2rem;
+}
+
+@keyframes typing {
+    /* from { width: 0 }
+    to { width: 100% } */
+    0% {
+        width: 0 ;
+    }
+    40% {
+        width: 100% ;
+    }
+    99% {
+        width: 100% ;
+    }
+    100% {
+       width: 0;
+    }
+  }
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: var(--primary); }
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid var(--primary);
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: 
+      typing 5s steps(250, end) infinite,
+      blink .8s infinite;
+}
+
+.container-typed-out {
+display: inline-block;
+}
+
+
+
+/*///////////////////////////////////////////  MAIN ///////////////////////////////////// */
+
+main{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+main p{
+    font-family: 'Public Sans', sans-serif;
+    color: rgb(146, 146, 146);
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
+.slider-item{
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.slider-item h6, .slider-item i{
+    color: rgb(102, 102, 252);
+}
+
+.purple-icon{
+    color: rgb(102, 102, 252);
+}
+
+.blue-icon{
+    color: rgb(0, 114, 238);
+}
+
+.blue-icon:hover{
+    color: white;
+}
+
+#mobilecarousel{
+    display: none;
+}
+
+.outline-btn{
+    color: rgb(102, 102, 252);
+    border: 2px solid rgb(102, 102, 252);
+    border-radius: 15px;
+}
+
+.portfolio{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.portfolio .grey-heading{
+    color: rgb(146, 146, 146);
+}
+
+.grey-heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(146, 146, 146);
+}
+
+/* .portfolio-images{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+} */
+
+.portfolio-img{
+    padding-top: 20px;
+    width: 100%;
+}
+
+.portfoliosection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.portfolio-mobile-img{
+    width: 30%;
+}
+
+main .portfolio .primary-btn{
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(102, 102, 252);
+}
+
+.hr{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.brand-logo-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.off-white-background{
+    background-color: hsl(270, 36%, 96%);
+    width: 100%;
+    padding: 3rem;
+}
+
+.testimonial-img{
+    width: 25%;
+    border-radius: 10%;
+}
+
+.contact form{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact form div input{
+    padding: 1.5rem;
+    background-color: hsl(270, 36%, 96%);;
+}
+
+.contact form div textarea{
+    background-color: hsl(270, 36%, 96%);
+}
+
+.contact .btn{
+    background-color: rgb(102, 102, 252);
+    color: white;
+}
+
+.contact .btn:hover{
+    color: rgb(102, 102, 252);
+    border: 2px solid rgb(102, 102, 252);
+    background-color: white;
+}
+
+.email{
+    color: rgb(102, 102, 252);
+    text-align: right;
+}
+
+.image-reference{
+    margin-top: 100px;
+}
+
+.popup-container{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.089);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.send-email-popup{
+    background-color: hsl(270, 36%, 96%);
+    box-shadow: 10px 3px 15px rgb(194, 191, 191);
+
+    height: 300px;
+    text-align: center;
+    padding: 100px 1rem;
+
+    position: fixed;
+    top: 50%;
+    opacity: 1;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.popup-container .send-email-popup .btn{
+    background-color: rgb(102, 102, 252);
+    color: white;
+    position: relative;
+    bottom: -50%;
+    right: -40%;
+}
+
+.popup-container .send-email-popup .btn:hover{
+    color: rgb(102, 102, 252);
+    border: 2px solid rgb(102, 102, 252);
+    background-color: white;
+}
+
+.grey-heading{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(146, 146, 146);
+}
+
+
+
+footer{
+    background-color: rgb(102, 102, 252);
+    color: white;
+    padding: 9rem;
+}
+
+footer a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer p{
+    color: whitesmoke;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+
+    .heading h1{
+        font-size: 2rem;
+    }
+
+    .heading{
+        padding-top: 450px;
+        transform: translateY(-50%);
+    }
+
+    .navbar-nav{
+        text-align: center;
+        padding: 0;
+    }
+
+    .contact form{
+        width: 100%;
+        margin-left: 0;
+        transform: translateX(0%);
+    }
+
+    .send-email-popup{
+        top: 40%;
+        left: 50%;
+        width: 80%;
+        height: fit-content;
+        transform: translateX(-50%);
+        padding: 1rem;
+    }
+
+    .brand-logo-img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    
+    .off-white-background{
+        background-color: hsl(270, 36%, 96%);
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .popup-container .send-email-popup .btn{
+        background-color: rgb(102, 102, 252);
+        color: white;
+        position: relative;
+        bottom: 0;
+        right: -30%;
+    }
+
+    
+    footer{
+        background-color: rgb(102, 102, 252);
+        color: white;
+        padding: 2rem;
+    }
+
+/* //////////////////////////////////////////////////////// MAIN ////////////////////////////*/
+
+    /* .slider-container{
+        min-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 33% 33% 33% 33% 33%;
+        grid-template-rows: 100%;
+        gap: 66vw;
+    }
+
+    .slider-item{
+        width: 100vw;
+        margin-left: 0vw;
+        padding: 2.5rem;
+        display: inline-block;
+        text-align: center;
+    } */
+    
+}
