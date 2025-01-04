@@ -9,13 +9,11 @@
     background-image: url("images/body-background.jpg");
     background-size: cover;
     height: 100vh;
-    overflow-y: scroll;
 }
 
 .body-overlay{
     background-color: rgba(0, 0, 0, 0.612);
     overflow-x: hidden;
-    overflow-y: scroll;
     height: 100vh;
 }
 
